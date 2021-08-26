@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-        theme: ThemeData(
+      theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-- widget/witgets.dart
+- ui/home/home_screen.dart
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_v1/widget/witgets.dart';
