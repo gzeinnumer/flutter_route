@@ -42,7 +42,7 @@ export 'home/home_screen.dart';
 export 'cart/cart_screen.dart';
 ```
 
-- MyApp.dart
+- main.dart
 ```dart
 import 'ui/screen.dart';
 
