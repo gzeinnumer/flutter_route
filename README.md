@@ -89,6 +89,11 @@ class HomeScreen extends StatelessWidget {
 }
 ```
 
+- PutExtra
+```dart
+Navigator.pushNamed(context, ProductScreen.routeName, arguments: product);
+```
+
 ---
 
 ```
