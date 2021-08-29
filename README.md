@@ -89,9 +89,38 @@ class HomeScreen extends StatelessWidget {
 }
 ```
 
+---
+
 - PutExtra
 ```dart
 Navigator.pushNamed(context, ProductScreen.routeName, arguments: product);
+```
+```dart
+static Route onGenerateRoute(RouteSettings settings) {
+  switch (settings.name) {
+    ...
+    case ProductScreen.routeName:
+      return ProductScreen.route(data: settings.arguments as Product);
+     ...
+  }
+}
+```
+```dart
+class ProductScreen extends StatelessWidget {
+  final Product data;
+  static const String routeName = "/product";
+
+  const ProductScreen({required this.data});
+
+  static Route route({required Product data}) {
+    return MaterialPageRoute(
+      settings: RouteSettings(name: routeName),
+      builder: (_) => ProductScreen(data: data),
+    );
+  }
+ 
+  ...
+}
 ```
 
 ---
